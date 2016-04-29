@@ -74,7 +74,7 @@ DEBUG=@DEBUG@
 # enable with PROFILE=gprof
 PROFILE=@PROFILE@
 # enable with SHARED=2
-SHARED=@SHARED@
+SHARED=2
 
 ## Directory specific selections which override the above
 
@@ -175,7 +175,7 @@ DOXYGEN = doxygen
 ## various high level scripted languages, such as Perl
 
 ## Uncomment following to enable building of wrappers
-#INCLUDE_MODULES += WRAPPERS
+INCLUDE_MODULES += WRAPPERS
 
 ## Path to Swig.
 ##
@@ -192,11 +192,11 @@ DOXYGEN = doxygen
 
 
 # Languages to generate wrappers for. Currently: PYTHON and PERL5
-CONFIG_WRAPPER_LANGUAGES = PYTHON PERL5
+CONFIG_WRAPPER_LANGUAGES = PYTHON
 
 # Language specific includes should be set to correct site paths
-CONFIG_PYTHON_INCLUDES= -I/usr/include/python2.2/
-CONFIG_PERL_INCLUDES= -I/usr/lib/perl5/5.8.3/i386-linux-thread-multi/CORE/
+CONFIG_PYTHON_INCLUDES= -I/usr/include/python2.7/
+#CONFIG_PERL_INCLUDES= -I/usr/lib/perl5/5.8.3/i386-linux-thread-multi/CORE/
 #OR OLD#CONFIG_PERL_INCLUDES= -I/usr/lib/perl5/5.6.1/i386-linux/CORE/
 ##
 ###################################################################

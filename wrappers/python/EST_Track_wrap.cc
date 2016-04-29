@@ -7536,7 +7536,7 @@ SWIGINTERN PyObject *_wrap_EST_Track_a__SWIG_0(PyObject *SWIGUNUSEDPARM(self), P
     SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "EST_Track_a" "', argument " "3"" of type '" "int""'");
   } 
   arg3 = static_cast< int >(val3);
-  result = (float)((EST_Track const *)arg1)->a(arg2,arg3);
+  result = (float)((EST_Track *)arg1)->a(ssize_t(arg2),int(arg3));
   resultobj = SWIG_From_float(static_cast< float >(result));
   return resultobj;
 fail:
@@ -7567,7 +7567,7 @@ SWIGINTERN PyObject *_wrap_EST_Track_a__SWIG_1(PyObject *SWIGUNUSEDPARM(self), P
     SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "EST_Track_a" "', argument " "2"" of type '" "int""'");
   } 
   arg2 = static_cast< int >(val2);
-  result = (float)((EST_Track const *)arg1)->a(arg2);
+  result = (float)((EST_Track const *)arg1)->a(ssize_t(arg2));
   resultobj = SWIG_From_float(static_cast< float >(result));
   return resultobj;
 fail:
@@ -7607,7 +7607,7 @@ SWIGINTERN PyObject *_wrap_EST_Track_a__SWIG_2(PyObject *SWIGUNUSEDPARM(self), P
     SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "EST_Track_a" "', argument " "3"" of type '" "int""'");
   } 
   arg3 = static_cast< int >(val3);
-  result = (float)((EST_Track const *)arg1)->a(arg2,arg3);
+  result = ((EST_Track const *)arg1)->a(arg2,arg3);
   resultobj = SWIG_From_float(static_cast< float >(result));
   return resultobj;
 fail:
